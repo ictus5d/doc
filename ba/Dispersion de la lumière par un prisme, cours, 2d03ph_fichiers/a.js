@@ -1,0 +1,1 @@
+var _ad6su = _ad6su || {"l":"http:\/\/yx7tuqlwak.s.ad6media.fr\/su\/a4a3024e6bea765da99414b7f259b017\/3\/5656?","d":"false","c":"86400","cc":1,"open_callback":""};(function(){var s=document.createElement('script'),e=document.getElementsByTagName('script')[0];s.type='text/javascript';s.async=false;s.src='http://c.ad6media.fr/sc.js?24';e.parentNode.insertBefore(s,e);})();

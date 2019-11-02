@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\begin{document}
+
+\begin{circuitikz}[scale=1]
+\draw ( 0, 0) [short, *-] node[anchor=south] {$\Phi_J$} to (0, -1);
+
+% right
+\draw ( 0, -1) to (2, -1) to node[anchor=west] {$\Phi_{J}^2$} (2, -2) to (3, -2)
+               to [barrier, l=$E_J^2$] (3, -4) to (2, -4)to (2, -5) to (0, -5) node[ground] {};
+\draw ( 2, -2) to (1, -2) to [capacitor, l=$C_J^2$] (1, -4) to (1, -4) to (2, -4);
+
+% left
+\draw ( 0, -1) to (-2, -1) to node[anchor=west] {$\Phi_{J}^1$} (-2, -2) to (-3, -2)
+               to [capacitor, l=$C_J^1$] (-3, -4) to (-2, -4)  to (-2, -5) to (0, -5); 
+\draw (-2, -2) to (-1, -2) to [barrier, l=$E_J^1$] (-1, -4) to (-1, -4) to (-2, -4);
+\end{circuitikz}
+\end{document}
